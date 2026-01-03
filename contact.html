@@ -1,33 +1,75 @@
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h3 class="section-title">Get In Touch</h3>
-        <p class="contact-intro">
-            I am currently open to **SQA Engineering** opportunities and freelance projects. 
-            Whether you have a question or want to discuss a potential collaboration, feel free to reach out!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Zainullah Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--secondary);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        input:focus, textarea:focus { border-color: var(--accent); }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ZK.</div>
+        <div class="nav-links">
+            <a href="index.html">01. Home</a>
+            <a href="skills.html">02. Skills</a>
+            <a href="projects.html">03. Projects</a>
+            <a href="education.html">04. Education</a>
+            <a href="contact.html" style="color: var(--accent);">05. Contact</a>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 120px; text-align: center;">
+        <h2 class="section-title" style="justify-content: center;">Get In Touch</h2>
+        <p style="max-width: 600px; margin: 0 auto 50px; color: var(--text-dim);">
+            I’m currently looking for new opportunities. Whether you have a project in mind or just want to chat about SQA trends, my inbox is always open.
         </p>
 
         <div class="contact-grid">
-            <a href="mailto:ullahr474@gmail.com" class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h4>Email</h4>
-                <p>ullahr474@gmail.com</p>
-                <span>Send a message</span>
-            </a>
+            <div style="text-align: left;">
+                <h3 style="margin-bottom: 20px; color: #e6f1ff;">Let's Talk</h3>
+                <p style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color: var(--accent); margin-right: 10px;"></i> ullahr474@gmail.com</p>
+                <p style="margin-bottom: 30px;"><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 10px;"></i> Pakistan</p>
+                
+                <div style="display: flex; gap: 20px;">
+                    <a href="https://linkedin.com/in/zainullah-khan-0b69371a0" class="social-link" style="font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/iamzainullah" class="social-link" style="font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/zainullah_khanmarwat" class="social-link" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
 
-            <a href="https://www.linkedin.com/in/zainullah-khan-0b69371a0" target="_blank" class="contact-card">
-                <i class="fab fa-linkedin-in"></i>
-                <h4>LinkedIn</h4>
-                <p>Zainullah Khan</p>
-                <span>Connect with me</span>
-            </a>
-
-            <a href="https://www.instagram.com/zainullah_khanmarwat" target="_blank" class="contact-card">
-                <i class="fab fa-instagram"></i>
-                <h4>Instagram</h4>
-                <p>@zainullah_khanmarwat</p>
-                <span>Follow my journey</span>
-            </a>
+            <form action="mailto:ullahr474@gmail.com" method="post" enctype="text/plain">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Send Message</button>
+            </form>
         </div>
     </div>
-</section>
 
+    <footer style="margin-top: 100px; padding: 40px; text-align: center; color: var(--text-dim); font-size: 0.8rem;">
+        Designed & Built by Zainullah Khan Marwat © 2026
+    </footer>
+</body>
+</html>
