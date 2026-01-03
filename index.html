@@ -1,123 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zainullah Khan | SQA Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #0a192f;
-            --accent: #64ffda;
-            --text-light: #ccd6f6;
-            --text-gray: #8892b0;
-            --bg-card: #112240;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; background-color: var(--primary); color: var(--text-light); line-height: 1.6; }
-
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-
-        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
-        .accent-text { color: var(--accent); font-family: monospace; font-size: 1.1rem; margin-bottom: 10px; }
-        h1 { font-size: clamp(40px, 8vw, 80px); font-weight: 700; color: #e6f1ff; }
-        h2 { font-size: clamp(30px, 5vw, 50px); color: var(--text-gray); margin-bottom: 20px; }
-        .hero-desc { max-width: 600px; color: var(--text-gray); margin-bottom: 30px; }
-
-        section { padding: 100px 0; }
-        .section-title { font-size: 2rem; margin-bottom: 40px; display: flex; align-items: center; }
-        .section-title::after { content: ""; display: block; height: 1px; width: 300px; background: #233554; margin-left: 20px; }
-
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: var(--bg-card); padding: 30px; border-radius: 4px; transition: transform 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card i { color: var(--accent); font-size: 2rem; margin-bottom: 20px; }
-
-        .project-card { border-left: 4px solid var(--accent); margin-bottom: 30px; }
-
-        .contact-links { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .btn { border: 1px solid var(--accent); color: var(--accent); padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; transition: 0.3s; }
-        .btn:hover { background: rgba(100, 255, 218, 0.1); }
-        .social-link { color: var(--text-light); font-size: 1.5rem; transition: 0.3s; }
-        .social-link:hover { color: var(--accent); }
-
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: var(--text-gray); }
-    </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">ZK.</div>
+        <div class="nav-links">
+            <a href="index.html">01. Home</a>
+            <a href="skills.html">02. Skills</a>
+            <a href="projects.html">03. Projects</a>
+            <a href="education.html">04. Education</a>
+            <a href="contact.html">05. Contact</a>
+        </div>
+    </nav>
 
-    <div class="container">
-        <header>
-            <p class="accent-text">Hi, my name is</p>
-            <h1>Zainullah Khan Marwat.</h1>
-            <h2>I ensure software quality.</h2>
-            <p class="hero-desc">
-                I am a Hybrid SQA Engineer specializing in manual and automated testing. 
-                With 2-3 years of experience, I build robust testing suites using Selenium, 
-                Postman, and JMeter to deliver bug-free software.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:ullahr474@gmail.com" class="btn">Say Hello</a>
-                <a href="https://www.linkedin.com/in/zainullah-khan-0b69371a0" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/zainullah_khanmarwat" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/iamzainullah" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </header>
-
-        <section id="about">
-            <h3 class="section-title">Technical Expertise</h3>
-            <div class="skills-grid">
-                <div class="card">
-                    <i class="fas fa-vial"></i>
-                    <h3>Manual Testing</h3>
-                    <p>Regression, Smoke, Sanity, and UI/UX testing. Expert in Bug Lifecycle management using Jira,TestRail.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-code"></i>
-                    <h3>Automation</h3>
-                    <p>End-to-end web automation using Selenium WebDriver (Python) with certification q and performance testing with JMeter.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-plug"></i>
-                    <h3>API Testing</h3>
-                    <p>Certified in Postman for RESTful API validation, environment management, and automated collection runs.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h3 class="section-title">Major Projects</h3>
-            <div class="card project-card">
-                <h3>Mentexa (AI Study Friend)</h3>
-                <p>Lead QA for an AI-based study friend with real-time avatar interaction. Tested emotion detection logic and UI/UX flows.</p>
-            </div>
-            <div class="card project-card">
-                <h3>E-Commerce Audit Suite</h3>
-                <p>Performed a full manual and automated audit for e-commerce platforms, identifying 50+ critical vulnerabilities in checkout and zip-code validation.</p>
-            </div>
-            <div class="card project-card">
-                <h3>Java Point of Sale</h3>
-                <p>Developed and tested a fully functional Shopping Cart and POS system using Java GUI.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h3 class="section-title">Get In Touch</h3>
-            <p style="text-align: center; margin-bottom: 30px;">
-                I'm currently looking for new opportunities in SQA Engineering. 
-                Whether you have a question or just want to say hi, my inbox is always open!
-            </p>
-            <div style="text-align: center;">
-                <a href="mailto:ullahr474@gmail.com" class="btn">Email Me: ullahr474@gmail.com</a>
-            </div>
-        </section>
+    <div class="container" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 10%;">
+        <p style="color: var(--accent); font-family: monospace;">Hi, my name is</p>
+        <h1 style="font-size: 4rem; color: #e6f1ff;">Zainullah Khan Marwat.</h1>
+        <h2 style="font-size: 3.5rem; color: var(--text-dim);">I ensure digital perfection.</h2>
+        <p style="max-width: 500px; margin: 20px 0 40px;">Hybrid SQA Engineer specialized in breaking things so your customers don't. From Selenium automation to deep API audits.</p>
+        <a href="projects.html" class="btn">View My Work</a>
     </div>
-
-    <footer>
-        Designed & Built by Zainullah Khan Marwat &copy; 2026
-    </footer>
-
 </body>
 </html>
